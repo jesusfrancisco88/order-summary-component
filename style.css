@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 1px);
+  font-family: "Red Hat Display", sans-serif;
+
+  /* BACKGROUND IMAGE DESKTOP */
+  background-color: hsl(225, 100%, 94%);
+  background-repeat: no-repeat;
+  height: 60rem;
+
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  max-width: 35rem;
+}
+
+/* CONTENT */
+
+.image-card {
+  max-width: 100%;
+  display: block;
+  overflow: hidden;
+  border-top-left-radius: 1.8rem;
+  border-top-right-radius: 1.8rem;
+}
+
+.content-box {
+  background-color: hsl(225, 100%, 98%);
+  padding: 2.8rem 3.2rem;
+  border-bottom-left-radius: 1.8rem;
+  border-bottom-right-radius: 1.8rem;
+}
+
+.title {
+  text-align: center;
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+  margin-bottom: 1.2rem;
+  font-size: 1.8rem;
+}
+
+.paragraph {
+  font-size: 1.4rem;
+  text-align: center;
+  color: hsl(224, 23%, 55%);
+  margin-bottom: 2.8rem;
+}
+
+.music-plan {
+  display: flex;
+  gap: 1.8rem;
+  margin-bottom: 3.4rem;
+}
+
+.icon-music {
+  width: 3rem;
+  height: 3rem;
+}
+
+.prices {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.anual-price {
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+.yearly-price {
+  color: hsl(224, 23%, 55%);
+}
+
+.checkout {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 2.8rem;
+}
+
+.payment {
+  padding: 1.2rem 8rem;
+  border-radius: 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.2rem;
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+}
+
+.cancel-order {
+  color: hsl(224, 23%, 55%);
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+.change-gap {
+  display: flex;
+  align-items: center;
+  gap: 8rem;
+  font-weight: 600;
+}
+
+/* MOBILE */
+
+@media (max-width: 24em) {
+  .container {
+    max-width: 25rem;
+  }
+
+  .content-box {
+    padding: 2rem 2rem;
+  }
+
+  .change-gap {
+    gap: 4rem;
+  }
+
+  .payment {
+    padding: 1.2rem 4rem;
+  }
+}
